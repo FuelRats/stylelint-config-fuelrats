@@ -4,5 +4,6 @@ module.exports = {
     './rules/limitfeatures',
     './rules/style',
     './rules/plugin-scss',
+    './rules/plugin-order',
   ],
 }
