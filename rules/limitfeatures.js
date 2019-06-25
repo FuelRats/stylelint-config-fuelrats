@@ -1,5 +1,5 @@
-const kebabCasePattern = /^[a-z][-a-z]{4,49}$/u
-const pascalCasePattern = /^[A-Z]([A-Za-z]){4,49}$/u
+const kebabCasePattern = /^[a-z]{2,}(-[a-z]{2,})*$/u
+const pascalCasePattern = /^([A-Z][a-z]{1,})+$/u
 
 
 
