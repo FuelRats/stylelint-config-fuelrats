@@ -49,6 +49,8 @@ module.exports = {
       'vh', // View Height
       '%', // Percent
       's', // Seconds
+      'fr', // Fractional
+      'deg', // Degrees
     ],
 
     // Disallow redundant values in shorthand properties (Autofixable).
