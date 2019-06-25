@@ -31,6 +31,7 @@
   },
   "peerDependencies": {
     "stylelint": "^10.1.0",
+    "stylelint-order": "^3.0.0",
     "stylelint-scss": "^3.8.0"
   }
 }
