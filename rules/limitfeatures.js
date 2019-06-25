@@ -45,8 +45,10 @@ module.exports = {
       'px', // Pixels
       'em', // Font Size relative to element
       'rem', // Font Size relative to root element
-      'vw', // View Width
-      'vh', // View Height
+      'vw', // % of View Width
+      'vh', // % of View Height
+      'vmin', // % of View width or height, whichever is smaller
+      'vmax', // % of View width or height, whichever is larger
       '%', // Percent
       's', // Seconds
       'fr', // Fractional
