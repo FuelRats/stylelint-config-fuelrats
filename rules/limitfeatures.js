@@ -191,7 +191,8 @@ module.exports = {
     'at-rule-no-vendor-prefix': true,
 
     // Specify a requirelist of properties for an at-rule.
-    'at-rule-property-requirelist': {
+    // Disabled until bugs are fixed.
+    /* 'at-rule-property-requirelist': {
       'font-face': [
         'font-display',
         'font-family',
@@ -203,7 +204,7 @@ module.exports = {
         'from',
         'to',
       ],
-    },
+    }, */
 
     // Specify a blacklist of disallowed words within comments.
     'comment-word-blacklist': null,
