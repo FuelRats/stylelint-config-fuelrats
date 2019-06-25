@@ -229,7 +229,7 @@ module.exports = {
 
     // Require or disallow an empty line before at-rules (Autofixable).
     'at-rule-empty-line-before': ['always', {
-      except: ['first-nested'],
+      except: ['first-nested', 'after-same-name'],
       ignore: ['after-comment'],
     }],
 
