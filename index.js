@@ -4,6 +4,7 @@ module.exports = {
     './rules/limitfeatures',
     './rules/style',
     './rules/plugin-scss',
-    './rules/plugin-order',
+    // Disabled until we get a hold on everything else,
+    // './rules/plugin-order',
   ],
 }
