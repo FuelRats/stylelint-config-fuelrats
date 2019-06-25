@@ -1,3 +1,4 @@
+.eslintignore
 .eslintrc.js
 yarn-error.log
 yarn.lock
