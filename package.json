@@ -1,0 +1,36 @@
+{
+  "name": "@fuelrats/stylelint-config",
+  "version": "0.1.0",
+  "description": "Shareable stylelint config for FuelRats SCSS files",
+  "main": "index.js",
+  "author": {
+    "name": "Cameron Welter",
+    "email": "clapton@fuelrats.com",
+    "url": "https://github.com/UncleClapton"
+  },
+  "bugs": {
+    "url": "https://github.com/FuelRats/stylelint-config-fuelrats/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FuelRats/stylelint-config-fuelrats"
+  },
+  "homepage": "https://github.com/FuelRats/stylelint-config-fuelrats",
+  "keywords": [
+    "stylelint",
+    "stylelintconfig",
+    "fuelrats",
+    "sass",
+    "scss"
+  ],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@fuelrats/eslint-config": "^0.11.0",
+    "eslint": "^6.0.0"
+  },
+  "peerDependencies": {
+    "stylelint": "^10.1.0",
+    "stylelint-scss": "^3.8.0"
+  }
+}
