@@ -17,7 +17,7 @@ module.exports = {
       'at-rules',
       'less-mixins',
     ],
-    'order/properties-alphabetical-order': false,
+    'order/properties-alphabetical-order': null,
     'order/properties-order': [
       [
         {
