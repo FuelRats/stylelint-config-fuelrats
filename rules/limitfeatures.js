@@ -1,7 +1,7 @@
-const kebabCasePattern = /^[a-z][a-z0-9]{1,}(-[a-z][a-z0-9]{1,})*$/u
-const pascalCasePattern = /^([A-Z][a-z0-9]{1,})+$/u
-
-
+const {
+  kebabCasePattern,
+  pascalCasePattern,
+} = require('../res/patterns')
 
 
 

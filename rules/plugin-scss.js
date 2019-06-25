@@ -1,4 +1,8 @@
-const kebabCasePattern = /^[a-z][a-z0-9]{1,}(-[a-z][a-z0-9]{1,})*$/u
+const { kebabCasePattern } = require('../res/patterns')
+
+
+
+
 
 module.exports = {
   plugins: [
