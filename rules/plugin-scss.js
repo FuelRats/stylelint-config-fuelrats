@@ -1,4 +1,4 @@
-const kebabCasePattern = /^[a-z]+(-[-a-z]+)*$/u
+const kebabCasePattern = /^[a-z][a-z0-9]{1,}(-[a-z][a-z0-9]{1,})*$/u
 
 module.exports = {
   plugins: [

@@ -1,5 +1,5 @@
-const kebabCasePattern = /^[a-z]{2,}(-[a-z]{2,})*$/u
-const pascalCasePattern = /^([A-Z][a-z]{1,})+$/u
+const kebabCasePattern = /^[a-z][a-z0-9]{1,}(-[a-z][a-z0-9]{1,})*$/u
+const pascalCasePattern = /^([A-Z][a-z0-9]{1,})+$/u
 
 
 
@@ -48,6 +48,7 @@ module.exports = {
       'vw', // View Width
       'vh', // View Height
       '%', // Percent
+      's', // Seconds
     ],
 
     // Disallow redundant values in shorthand properties (Autofixable).
