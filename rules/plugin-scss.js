@@ -126,7 +126,7 @@ module.exports = {
     'scss/operator-no-unspaced': true,
 
     // Disallow non-CSS @imports in partial files.
-    'scss/partial-no-import': true,
+    'scss/partial-no-import': null,
 
     // Require or disallow nesting of combinators in selectors.
     'scss/selector-nest-combinators': null,
