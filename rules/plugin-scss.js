@@ -70,7 +70,7 @@ module.exports = {
     'scss/dollar-variable-colon-newline-after': 'always-multi-line',
 
     // Require or disallow whitespace after the colon in $-variable declarations (Autofixable).
-    'scss/dollar-variable-colon-space-after': 'always',
+    'scss/dollar-variable-colon-space-after': 'always-single-line',
 
     // Require a single space or disallow whitespace before the colon in $-variable declarations (Autofixable).
     'scss/dollar-variable-colon-space-before': 'never',
