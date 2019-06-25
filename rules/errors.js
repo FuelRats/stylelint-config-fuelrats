@@ -60,7 +60,7 @@ module.exports = {
     'comment-no-empty': [true],
 
     // Disallow selectors of lower specificity from coming after overriding selectors of higher specificity.
-    'no-descending-specificity': [true],
+    'no-descending-specificity': null,
 
     // Disallow duplicate @import rules within a stylesheet.
     'no-duplicate-at-import-rules': [true],
