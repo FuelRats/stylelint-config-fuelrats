@@ -142,120 +142,120 @@ module.exports = {
     'block-opening-brace-space-before': 'always',
 
     // Require a single space or disallow whitespace on the inside of the brackets within attribute selectors (Autofixable).
-    'selector-attribute-brackets-space-inside': "never",
+    'selector-attribute-brackets-space-inside': 'never',
 
     // Require a single space or disallow whitespace after operators within attribute selectors (Autofixable).
-    'selector-attribute-operator-space-after': "never",
+    'selector-attribute-operator-space-after': 'never',
 
     // Require a single space or disallow whitespace before operators within attribute selectors (Autofixable).
-    'selector-attribute-operator-space-before': "never",
+    'selector-attribute-operator-space-before': 'never',
 
     // Require or disallow quotes for attribute values.
-    'selector-attribute-quotes': "always",
+    'selector-attribute-quotes': 'always',
 
     // Require a single space or disallow whitespace after the combinators of selectors (Autofixable).
-    'selector-combinator-space-after': "always",
+    'selector-combinator-space-after': 'always',
 
     // Require a single space or disallow whitespace before the combinators of selectors (Autofixable).
-    'selector-combinator-space-before': "always",
+    'selector-combinator-space-before': 'always',
 
     // Disallow non-space characters for descendant combinators of selectors (Autofixable).
     'selector-descendant-combinator-no-non-space': true,
 
     // Specify lowercase or uppercase for pseudo-class selectors (Autofixable).
-    'selector-pseudo-class-case': "lower",
+    'selector-pseudo-class-case': 'lower',
 
     // Require a single space or disallow whitespace on the inside of the parentheses within pseudo-class selectors (Autofixable).
-    'selector-pseudo-class-parentheses-space-inside': "never",
+    'selector-pseudo-class-parentheses-space-inside': 'never',
 
     // Specify lowercase or uppercase for pseudo-element selectors.
-    'selector-pseudo-element-case': "lower",
+    'selector-pseudo-element-case': 'lower',
 
     // Specify single or double colon notation for applicable pseudo-elements (Autofixable).
-    'selector-pseudo-element-colon-notation': "double",
+    'selector-pseudo-element-colon-notation': 'double',
 
     // Specify lowercase or uppercase for type selectors (Autofixable).
-    'selector-type-case': "lower",
+    'selector-type-case': 'lower',
 
     // Require a newline or disallow whitespace after the commas of selector lists (Autofixable).
-    'selector-list-comma-newline-after': "always",
+    'selector-list-comma-newline-after': 'always',
 
     // Require a newline or disallow whitespace before the commas of selector lists (Autofixable).
-    'selector-list-comma-newline-before': "never-multi-line",
+    'selector-list-comma-newline-before': 'never-multi-line',
 
     // Require a single space or disallow whitespace after the commas of selector lists (Autofixable).
-    'selector-list-comma-space-after': "never",
+    'selector-list-comma-space-after': 'never',
 
     // Require a single space or disallow whitespace before the commas of selector lists (Autofixable).
-    'selector-list-comma-space-before': "never",
+    'selector-list-comma-space-before': 'never',
 
     // Require or disallow an empty line before rules (Autofixable).
-    'rule-empty-line-before': ["always-multi-line", {
+    'rule-empty-line-before': ['always-multi-line', {
       except: [
-        "after-single-line-comment",
-        "first-nested",
+        'after-single-line-comment',
+        'first-nested',
       ],
     }],
 
     // Require a single space or disallow whitespace after the colon in media features (Autofixable).
-    'media-feature-colon-space-after': "always",
+    'media-feature-colon-space-after': 'always',
 
     // Require a single space or disallow whitespace before the colon in media features (Autofixable).
-    'media-feature-colon-space-before': "never",
+    'media-feature-colon-space-before': 'never',
 
     // Specify lowercase or uppercase for media feature names (Autofixable).
-    'media-feature-name-case': "lower",
+    'media-feature-name-case': 'lower',
 
     // Require a single space or disallow whitespace on the inside of the parentheses within media features (Autofixable).
-    'media-feature-parentheses-space-inside': "never",
+    'media-feature-parentheses-space-inside': 'never',
 
     // Require a single space or disallow whitespace after the range operator in media features (Autofixable).
-    'media-feature-range-operator-space-after': "always",
+    'media-feature-range-operator-space-after': 'always',
 
     // Require a single space or disallow whitespace before the range operator in media features (Autofixable).
-    'media-feature-range-operator-space-before': "always",
+    'media-feature-range-operator-space-before': 'always',
 
     // Require a newline or disallow whitespace after the commas of media query lists (Autofixable).
-    'media-query-list-comma-newline-after': "always",
+    'media-query-list-comma-newline-after': 'always',
 
     // Require a newline or disallow whitespace before the commas of media query lists.
-    'media-query-list-comma-newline-before': "never-multi-line",
+    'media-query-list-comma-newline-before': 'never-multi-line',
 
     // Require a single space or disallow whitespace after the commas of media query lists (Autofixable).
-    'media-query-list-comma-space-after': "never",
+    'media-query-list-comma-space-after': 'never',
 
     // Require a single space or disallow whitespace before the commas of media query lists (Autofixable).
-    'media-query-list-comma-space-before': "never",
+    'media-query-list-comma-space-before': 'never',
 
     // Require or disallow an empty line before at-rules (Autofixable).
-    'at-rule-empty-line-before': ["always", {
-      except: ["first-nested"],
-      ignore: ["after-comment"],
+    'at-rule-empty-line-before': ['always', {
+      except: ['first-nested'],
+      ignore: ['after-comment'],
     }],
 
     // Specify lowercase or uppercase for at-rules names (Autofixable).
-    'at-rule-name-case': "lower",
+    'at-rule-name-case': 'lower',
 
     // Require a newline after at-rule names.
-    'at-rule-name-newline-after': "always-multi-line",
+    'at-rule-name-newline-after': 'always-multi-line',
 
     // Require a single space after at-rule names (Autofixable).
-    'at-rule-name-space-after': "always-single-line",
+    'at-rule-name-space-after': 'always-single-line',
 
     // Require a newline after the semicolon of at-rules (Autofixable).
-    'at-rule-semicolon-newline-after': "always",
+    'at-rule-semicolon-newline-after': 'always',
 
     // Require a single space or disallow whitespace before the semicolons of at-rules.
-    'at-rule-semicolon-space-before': "never",
+    'at-rule-semicolon-space-before': 'never',
 
     // Require or disallow an empty line before comments (Autofixable).
-    'comment-empty-line-before': ["always", {
-      except: ["first-nested"],
-      ignore: ["after-comment", "stylelint-commands"],
+    'comment-empty-line-before': ['always', {
+      except: ['first-nested'],
+      ignore: ['after-comment', 'stylelint-commands'],
     }],
 
     // Require or disallow whitespace on the inside of comment markers (Autofixable).
-    'comment-whitespace-inside': "always",
+    'comment-whitespace-inside': 'always',
 
     // Specify indentation (Autofixable).
     indentation: [2, {
