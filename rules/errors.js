@@ -54,7 +54,7 @@ module.exports = {
     'media-feature-name-no-unknown': [true],
 
     // Disallow unknown at-rules.
-    'at-rule-no-unknown': [true],
+    'at-rule-no-unknown': null,
 
     // Disallow empty comments.
     'comment-no-empty': [true],
