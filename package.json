@@ -1,6 +1,6 @@
 {
   "name": "@fuelrats/stylelint-config",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Shareable stylelint config for FuelRats SCSS files",
   "main": "index.js",
   "author": {
@@ -27,7 +27,7 @@
   "dependencies": {},
   "devDependencies": {
     "@fuelrats/eslint-config": "^0.11.0",
-    "eslint": "^6.0.0"
+    "eslint": "^6.0.1"
   },
   "peerDependencies": {
     "stylelint": "^10.1.0",
