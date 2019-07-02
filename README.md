@@ -4,7 +4,6 @@
     * Assumes project uses SCSS.
     * Includes [`stylelint-scss`][stylelint-scss] for additional SCSS linting.
     * Includes [`stylelint-order`][stylelint-order] for enforcing properly strucutred declarations.
-        * **currently disabled by default**
 
 
 
@@ -15,7 +14,7 @@
     * `npx install-peerdeps @fuelrats/stylelint-config`
     * or `yarn add stylelint stylelint-scss stylelint-order @fuelrats/stylelint-config`
 2. Add `"extends": ["@fuelrats/stylelint-config"],` to your `.stylelintrc` file.
-3. If you wish to enable `stylelint-order`, add `"@fuelrats/stylelint-config/rules/plugin-order"` to your extends.
+
 
 
 
