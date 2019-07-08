@@ -26,7 +26,7 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "@fuelrats/eslint-config": "^0.11.0",
+    "@fuelrats/eslint-config": "^1.0.1",
     "eslint": "^6.0.1"
   },
   "peerDependencies": {
