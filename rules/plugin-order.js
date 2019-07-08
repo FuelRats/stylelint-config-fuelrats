@@ -12,7 +12,7 @@ module.exports = {
       {
         // Selects @extends
         type: 'at-rule',
-        name: 'extends',
+        name: 'extend',
       },
       'dollar-variables',
       'custom-properties',
