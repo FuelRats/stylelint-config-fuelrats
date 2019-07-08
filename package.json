@@ -27,7 +27,8 @@
   "dependencies": {},
   "devDependencies": {
     "@fuelrats/eslint-config": "^1.0.1",
-    "eslint": "^6.0.1"
+    "eslint": "^6.0.1",
+    "eslint-plugin-import": "^2.18.0"
   },
   "peerDependencies": {
     "stylelint": "^10.1.0",
