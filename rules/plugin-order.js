@@ -4,6 +4,16 @@ module.exports = {
   ],
   rules: {
     'order/order': [
+      {
+        // Selects @include
+        type: 'at-rule',
+        name: 'include',
+      },
+      {
+        // Selects @extends
+        type: 'at-rule',
+        name: 'extends',
+      },
       'dollar-variables',
       'custom-properties',
       'at-variables',
