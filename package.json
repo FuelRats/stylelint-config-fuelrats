@@ -1,6 +1,6 @@
 {
   "name": "@fuelrats/stylelint-config",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "Shareable stylelint config for FuelRats SCSS files",
   "main": "index.js",
   "author": {
@@ -26,13 +26,13 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "@fuelrats/eslint-config": "^1.0.1",
-    "eslint": "^6.0.1",
-    "eslint-plugin-import": "^2.18.0"
+    "@fuelrats/eslint-config": "^1.1.2",
+    "eslint": "^6.6.0",
+    "eslint-plugin-import": "^2.18.2"
   },
   "peerDependencies": {
-    "stylelint": "^10.1.0",
-    "stylelint-order": "^3.0.0",
-    "stylelint-scss": "^3.8.0"
+    "stylelint": "^11",
+    "stylelint-order": "^3.1.1",
+    "stylelint-scss": "^3.12"
   }
 }
