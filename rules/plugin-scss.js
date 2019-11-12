@@ -42,8 +42,14 @@ module.exports = {
     // Require a single space or disallow whitespace after the closing brace of @if statements (Autofixable).
     'scss/at-if-closing-brace-space-after': 'never-intermediate',
 
+    // Disallow null in @if statements.
+    'scss/at-if-no-null': true,
+
     // Disallow leading underscore in partial names in @import.
     'scss/at-import-no-partial-leading-underscore': true,
+
+    // Require or disallow extension in @import commands.
+    'scss/at-import-partial-extension': null,
 
     // Specify blacklist of disallowed file extensions for partial names in @import commands.
     'scss/at-import-partial-extension-blacklist': null,
@@ -62,6 +68,9 @@ module.exports = {
 
     // Specify a pattern for Sass/SCSS-like mixin names.
     'scss/at-mixin-pattern': kebabCasePattern,
+
+    // Disallow parentheses in conditional @ rules (if, elsif, while)
+    'scss/at-rule-conditional-no-parentheses': true,
 
     // Disallow unknown at-rules. Should be used instead of stylelint's at-rule-no-unknown.
     'scss/at-rule-no-unknown': true,
@@ -105,17 +114,29 @@ module.exports = {
     // Require or disallow whitespace after the // in //-comments
     'scss/double-slash-comment-whitespace-inside': 'always',
 
+    // Disallow /*-comments.
+    'scss/comment-no-loud': null,
+
     // Require or disallow properties with - in their names to be in a form of a nested group.
     'scss/declaration-nested-properties': 'never',
 
     // Disallow nested properties of the same "namespace" be divided into multiple groups.
     'scss/declaration-nested-properties-no-divided-groups': null,
 
+    // Disallow non-numeric values when interpolating a value with a unit.
+    'scss/dimension-no-non-numeric-values': true,
+
+    // Encourage the use of the scale-color function over regular color functions.
+    'scss/function-color-relative': null,
+
     // Disallow quoted strings inside the quote function (Autofixable).
     'scss/function-quote-no-quoted-strings-inside': true,
 
     // Disallow unquoted strings inside the unquote function (Autofixable).
     'scss/function-unquote-no-unquoted-strings-inside': true,
+
+    // Require quoted keys in Sass maps.
+    'scss/map-keys-quotes': 'always',
 
     // Require a media feature value be a $-variable or disallow $-variables in media feature values.
     'scss/media-feature-value-dollar-variable': null,
@@ -138,10 +159,16 @@ module.exports = {
     // Disallow redundant nesting selectors (&).
     'scss/selector-no-redundant-nesting-selector': true,
 
+    // Disallow union class names with the parent selector (&)
+    'scss/selector-no-union-class-name': true,
+
     // Disallow dollar variables within a stylesheet.
     'scss/no-dollar-variables': null,
 
     // Disallow duplicate dollar variables within a stylesheet.
-    'scss/no-duplicate-dollar-variables': null,
+    'scss/no-duplicate-dollar-variables': true,
+
+    // Disallow duplicate mixins within a stylesheet.
+    'scss/no-duplicate-mixins': true,
   },
 }

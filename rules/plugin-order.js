@@ -34,7 +34,7 @@ module.exports = {
           groupName: 'layout',
 
           // If always, this group must be separated from other properties by an empty newline.
-          emptyLineBefore: 'always',
+          emptyLineBefore: 'threshold',
 
           // If true, properties within group should not have empty lines between them.
           noEmptyLineBetween: true,
@@ -46,7 +46,7 @@ module.exports = {
           groupName: 'flexbox-grid-parent',
 
           // If always, this group must be separated from other properties by an empty newline.
-          emptyLineBefore: 'always',
+          emptyLineBefore: 'threshold',
           properties: [
             'flex-flow', 'flex-direction', 'flex-wrap',
             'grid',
@@ -61,7 +61,7 @@ module.exports = {
           groupName: 'flexbox-grid-child',
 
           // If always, this group must be separated from other properties by an empty newline.
-          emptyLineBefore: 'always',
+          emptyLineBefore: 'threshold',
           properties: [
             'order',
             'flex', 'flex-grow', 'flex-shrink', 'flex-basis',
@@ -74,7 +74,7 @@ module.exports = {
           groupName: 'box-model',
 
           // If always, this group must be separated from other properties by an empty newline.
-          emptyLineBefore: 'always',
+          emptyLineBefore: 'threshold',
 
           // If true, properties within group should not have empty lines between them.
           noEmptyLineBetween: true,
@@ -90,7 +90,7 @@ module.exports = {
           groupName: 'border',
 
           // If always, this group must be separated from other properties by an empty newline.
-          emptyLineBefore: 'always',
+          emptyLineBefore: 'threshold',
 
           // If true, properties within group should not have empty lines between them.
           noEmptyLineBetween: true,
@@ -111,7 +111,7 @@ module.exports = {
           order: 'flexible',
 
           // If always, this group must be separated from other properties by an empty newline.
-          emptyLineBefore: 'always',
+          emptyLineBefore: 'threshold',
 
           // If true, properties within group should not have empty lines between them.
           noEmptyLineBetween: true,
@@ -129,7 +129,7 @@ module.exports = {
           order: 'flexible',
 
           // If always, this group must be separated from other properties by an empty newline.
-          emptyLineBefore: 'always',
+          emptyLineBefore: 'threshold',
 
           // If true, properties within group should not have empty lines between them.
           noEmptyLineBetween: true,
@@ -146,7 +146,7 @@ module.exports = {
           order: 'flexible',
 
           // If always, this group must be separated from other properties by an empty newline.
-          emptyLineBefore: 'always',
+          emptyLineBefore: 'threshold',
 
           // If true, properties within group should not have empty lines between them.
           noEmptyLineBetween: true,
@@ -158,6 +158,10 @@ module.exports = {
       {
         // Specify where otherwise unspecified properties can appear: top, bottom, ignore (no rules applied)
         unspecified: 'ignore',
+
+        // I can't even come up with a single sentance to explain this.
+        // https://github.com/hudochenkov/stylelint-order/tree/master/rules/properties-order#emptylineminimumpropertythreshold-number
+        emptyLineMinimumPropertyThreshold: 2,
       },
     ],
   },
