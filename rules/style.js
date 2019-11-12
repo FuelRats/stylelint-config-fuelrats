@@ -279,5 +279,8 @@ module.exports = {
 
     // Disallow empty first lines (Autofixable).
     'no-empty-first-line': true,
+
+    // Require or disallow Unicode BOM.
+    'unicode-bom': 'never',
   },
 }
