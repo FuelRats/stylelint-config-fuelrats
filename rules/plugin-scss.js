@@ -166,7 +166,7 @@ module.exports = {
     'scss/no-dollar-variables': null,
 
     // Disallow duplicate dollar variables within a stylesheet.
-    'scss/no-duplicate-dollar-variables': true,
+    'scss/no-duplicate-dollar-variables': null,
 
     // Disallow duplicate mixins within a stylesheet.
     'scss/no-duplicate-mixins': true,
