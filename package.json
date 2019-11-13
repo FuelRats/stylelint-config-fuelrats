@@ -15,6 +15,9 @@
     "type": "git",
     "url": "https://github.com/FuelRats/stylelint-config-fuelrats"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "homepage": "https://github.com/FuelRats/stylelint-config-fuelrats",
   "keywords": [
     "stylelint",
