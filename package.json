@@ -26,14 +26,14 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "@fuelrats/eslint-config": "^2.0.0",
+    "@fuelrats/eslint-config": "^2.1.0",
     "eslint": "^6.8.0",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-jsdoc": "^21.0.0"
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsdoc": "^24.0.0"
   },
   "peerDependencies": {
-    "stylelint": ">=13",
-    "stylelint-order": ">=4",
-    "stylelint-scss": ">=3.14"
+    "stylelint": "^13",
+    "stylelint-order": "^4",
+    "stylelint-scss": "^3"
   }
 }
