@@ -1,4 +1,5 @@
 const {
+  camelCasePattern,
   kebabCasePattern,
   pascalCasePattern,
 } = require('../res/patterns')
@@ -106,7 +107,7 @@ module.exports = {
     'selector-attribute-operator-whitelist': null,
 
     // Specify a pattern for class selectors.
-    'selector-class-pattern': pascalCasePattern,
+    'selector-class-pattern': camelCasePattern,
 
     // Specify a blacklist of disallowed combinators.
     'selector-combinator-blacklist': null,
