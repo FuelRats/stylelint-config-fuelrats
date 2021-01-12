@@ -118,7 +118,9 @@ module.exports = {
     'block-closing-brace-empty-line-before': 'never',
 
     // Require a newline or disallow whitespace after the closing brace of blocks (Autofixable).
-    'block-closing-brace-newline-after': 'always',
+    'block-closing-brace-newline-after': ['always', {
+      ignoreAtRules: ['if', 'else'],
+    }],
 
     // Require a newline or disallow whitespace before the closing brace of blocks (Autofixable).
     'block-closing-brace-newline-before': 'always',
@@ -231,6 +233,7 @@ module.exports = {
     'at-rule-empty-line-before': ['always', {
       except: ['first-nested', 'after-same-name'],
       ignore: ['after-comment'],
+      ignoreAtRules: ['else'],
     }],
 
     // Specify lowercase or uppercase for at-rules names (Autofixable).
