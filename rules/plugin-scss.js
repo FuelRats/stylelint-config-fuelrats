@@ -16,7 +16,7 @@ module.exports = {
     'scss/at-else-closing-brace-newline-after': 'always-last-in-chain',
 
     // Require a single space or disallow whitespace after the closing brace of @else statements (Autofixable).
-    'scss/at-else-closing-brace-space-after': 'never-intermediate',
+    'scss/at-else-closing-brace-space-after': 'always-intermediate',
 
     // Require an empty line or disallow empty lines before @-else (Autofixable).
     'scss/at-else-empty-line-before': null,
@@ -40,7 +40,7 @@ module.exports = {
     'scss/at-if-closing-brace-newline-after': 'always-last-in-chain',
 
     // Require a single space or disallow whitespace after the closing brace of @if statements (Autofixable).
-    'scss/at-if-closing-brace-space-after': 'never-intermediate',
+    'scss/at-if-closing-brace-space-after': 'always-intermediate',
 
     // Disallow null in @if statements.
     'scss/at-if-no-null': true,
