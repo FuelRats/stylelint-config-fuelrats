@@ -8,44 +8,122 @@ const {
 
 module.exports = {
   rules: {
+
+    // ====================================================
+    // Alpha-value
+    // ====================================================
+
+    // Specify percentage or number notation for alpha-values (Autofixable).
+    'alpha-value-notation': 'number',
+
+
+
+
+
+    // ====================================================
+    // Hue
+    // ====================================================
+
+    // Specify number or angle notation for degree hues (Autofixable).
+    'hue-degree-notation': 'angle',
+
+
+
+
+
+    // ====================================================
+    // Color
+    // ====================================================
+
+    // Specify modern or legacy notation for applicable color-functions (Autofixable).
+    // MAJOR: 'modern'
+    'color-function-notation': null,
+
     // Require (where possible) or disallow named colors.
     'color-named': 'never',
 
     // Disallow hex colors.
+    // MAJOR: true
     'color-no-hex': null,
 
-    // Specify a blacklist of disallowed functions.
-    'function-blacklist': null,
 
-    // Specify a whitelist of allowed functions.
-    'function-whitelist': null,
+
+
+
+    // ====================================================
+    // Length
+    // ====================================================
+
+    // Disallow units for zero lengths (Autofixable).
+    'length-zero-no-unit': true,
+
+
+
+
+
+    // ====================================================
+    // Function
+    // ====================================================
+
+    // Specify a list of allowed functions.
+    'function-allowed-list': null,
+
+    // Specify a list of disallowed functions.
+    'function-disallowed-list': null,
 
     // Disallow scheme-relative urls.
     'function-url-no-scheme-relative': true,
 
-    // Specify a blacklist of disallowed URL schemes.
-    'function-url-scheme-blacklist': null,
+    // Specify a list of allowed URL schemes.
+    'function-url-scheme-allowed-list': ['data', 'blob', 'https'],
 
-    // Specify a whitelist of allowed URL schemes.
-    'function-url-scheme-whitelist': ['data', 'blob', 'https'],
+    // Specify a list of disallowed URL schemes.
+    'function-url-scheme-disallowed-list': null,
+
+
+
+
+
+    // ====================================================
+    // Keyframes
+    // ====================================================
 
     // Specify a pattern for keyframe names.
     'keyframes-name-pattern': kebabCasePattern,
 
+
+
+
+
+    // ====================================================
+    // Number
+    // ====================================================
+
     // Limit the number of decimal places allowed in numbers.
     'number-max-precision': 4,
+
+
+
+    // ====================================================
+    // Time
+    // ====================================================
 
     // Specify the minimum number of milliseconds for time values.
     'time-min-milliseconds': null,
 
-    // Specify a blacklist of disallowed units.
-    'unit-blacklist': null,
 
-    // Specify a whitelist of allowed units.
-    'unit-whitelist': [
+
+
+
+    // ====================================================
+    // Unit
+    // ====================================================
+
+    // Specify a list of allowed units.
+    'unit-allowed-list': [
       'px', // Pixels
-      'em', // Font Size relative to element
-      'rem', // Font Size relative to root element
+      'em', // Size relative to element font-size
+      'rem', // Size relative to root element font-size
       'vw', // % of View Width
       'vh', // % of View Height
       'vmin', // % of View width or height, whichever is smaller
@@ -56,23 +134,65 @@ module.exports = {
       'deg', // Degrees
     ],
 
+    // Specify a list of disallowed units.
+    'unit-disallowed-list': null,
+
+
+
+
+
+    // ====================================================
+    // Shorthand Property
+    // ====================================================
+
     // Disallow redundant values in shorthand properties (Autofixable).
     'shorthand-property-no-redundant-values': true,
 
+
+
+
+
+    // ====================================================
+    // Value
+    // ====================================================
     // Disallow vendor prefixes for values.
     'value-no-vendor-prefix': true,
+
+
+
+
+
+    // ====================================================
+    // Custom Property
+    // ====================================================
 
     // Specify a pattern for custom properties.
     'custom-property-pattern': kebabCasePattern,
 
-    // Specify a blacklist of disallowed properties.
-    'property-blacklist': null,
 
-    // Specify a whitelist of allowed properties.
-    'property-whitelist': null,
+
+
+
+    // ====================================================
+    // Property
+    // ====================================================
+
+    // Specify a list of allowed properties.
+    'property-allowed-list': null,
+
+    // Specify a list of disallowed properties.
+    'property-disallowed-list': null,
 
     // Disallow vendor prefixes for properties (which are supported by AutoPrefixer).
     'property-no-vendor-prefix': true,
+
+
+
+
+
+    // ====================================================
+    // Declaration
+    // ====================================================
 
     // Disallow longhand properties that can be combined into one shorthand property.
     'declaration-block-no-redundant-longhand-properties': [
@@ -85,35 +205,54 @@ module.exports = {
     // Disallow !important within declarations.
     'declaration-no-important': true,
 
-    // Specify a blacklist of disallowed property and unit pairs within declarations.
-    'declaration-property-unit-blacklist': null,
+    // Specify a list of allowed property and unit pairs within declarations.
+    'declaration-property-unit-allowed-list': null,
 
-    // Specify a whitelist of allowed property and unit pairs within declarations.
-    'declaration-property-unit-whitelist': null,
+    // Specify a list of disallowed property and unit pairs within declarations.
+    'declaration-property-unit-disallowed-list': null,
 
-    // Specify a blacklist of disallowed property and value pairs within declarations.
-    'declaration-property-value-blacklist': null,
+    // Specify a list of allowed property and value pairs within declarations.
+    'declaration-property-value-allowed-list': null,
 
-    // Specify a whitelist of allowed property and value pairs within declarations.
-    'declaration-property-value-whitelist': null,
+    // Specify a list of disallowed property and value pairs within declarations.
+    'declaration-property-value-disallowed-list': null,
+
+
+
+
+
+    // ====================================================
+    // Declaration Block
+    // ====================================================
 
     // Limit the number of declarations within a single-line declaration block.
     'declaration-block-single-line-max-declarations': 1,
 
-    // Specify a blacklist of disallowed attribute operators.
-    'selector-attribute-operator-blacklist': null,
 
-    // Specify a whitelist of allowed attribute operators.
-    'selector-attribute-operator-whitelist': null,
+
+
+
+    // ====================================================
+    // Selector
+    // ====================================================
+
+    // Specify a list of disallowed attribute names.
+    'selector-attribute-name-disallowed-list': ['class', 'id'],
+
+    // Specify a list of allowed attribute operators.
+    'selector-attribute-operator-allowed-list': null,
+
+    // Specify a list of disallowed attribute operators.
+    'selector-attribute-operator-disallowed-list': null,
 
     // Specify a pattern for class selectors.
     'selector-class-pattern': camelCasePattern,
 
-    // Specify a blacklist of disallowed combinators.
-    'selector-combinator-blacklist': null,
+    // Specify a list of allowed combinators.
+    'selector-combinator-allowed-list': null,
 
-    // Specify a whitelist of allowed combinators.
-    'selector-combinator-whitelist': null,
+    // Specify a list of disallowed combinators.
+    'selector-combinator-disallowed-list': null,
 
     // Specify a pattern for ID selectors.
     'selector-id-pattern': pascalCasePattern,
@@ -157,45 +296,61 @@ module.exports = {
     // Disallow vendor prefixes for selectors (which are supported by AutoPrefixer).
     'selector-no-vendor-prefix': true,
 
-    // Specify a blacklist of disallowed pseudo-class selectors.
-    'selector-pseudo-class-blacklist': null,
+    // Specify a list of allowed pseudo-class selectors.
+    'selector-pseudo-class-allowed-list': null,
 
-    // Specify a whitelist of allowed pseudo-class selectors.
-    'selector-pseudo-class-whitelist': null,
+    // Specify a list of disallowed pseudo-class selectors.
+    'selector-pseudo-class-disallowed-list': null,
 
-    // Specify a blacklist of disallowed pseudo-element selectors.
-    'selector-pseudo-element-blacklist': null,
+    // Specify a list of allowed pseudo-element selectors.
+    'selector-pseudo-element-allowed-list': null,
 
-    // Specify a whitelist of allowed pseudo-element selectors.
-    'selector-pseudo-element-whitelist': null,
+    // Specify a list of disallowed pseudo-element selectors.
+    'selector-pseudo-element-disallowed-list': null,
 
-    // Specify a blacklist of disallowed media feature names.
-    'media-feature-name-blacklist': null,
 
-    // Specify a whitelist of allowed media feature names.
-    'media-feature-name-whitelist': null,
+
+
+
+    // ====================================================
+    // Media Feature
+    // ====================================================
+
+    // Specify a list of allowed media feature names.
+    'media-feature-name-allowed-list': null,
+
+    // Specify a list of disallowed media feature names.
+    'media-feature-name-disallowed-list': null,
 
     // Disallow vendor prefixes for media feature names.
     'media-feature-name-no-vendor-prefix': null,
 
-    // Specify a whitelist of allowed media feature name and value pairs.
-    'media-feature-name-value-whitelist': null,
+    // Specify a list of allowed media feature name and value pairs.
+    'media-feature-name-value-allowed-list': null,
+
+
+    // ====================================================
+    // Custom Media
+    // ====================================================
 
     // Specify a pattern for custom media query names.
     'custom-media-pattern': kebabCasePattern,
 
-    // Specify a blacklist of disallowed at-rules.
-    'at-rule-blacklist': null,
 
-    // Specify a whitelist of allowed at-rules.
-    'at-rule-whitelist': null,
 
-    // Disallow vendor prefixes for at-rules.
-    'at-rule-no-vendor-prefix': true,
+    // ====================================================
+    // At-rule
+    // ====================================================
+
+    // Specify a list of allowed at-rules.
+    'at-rule-allowed-list': null,
+
+    // Specify a list of disallowed at-rules.
+    'at-rule-disallowed-list': null,
 
     // Specify a requirelist of properties for an at-rule.
     // Disabled until bugs are fixed.
-    /* 'at-rule-property-requirelist': {
+    /* 'at-rule-property-required-list': {
       'font-face': [
         'font-display',
         'font-family',
@@ -209,8 +364,30 @@ module.exports = {
       ],
     }, */
 
-    // Specify a blacklist of disallowed words within comments.
-    'comment-word-blacklist': null,
+    // Disallow vendor prefixes for at-rules.
+    'at-rule-no-vendor-prefix': true,
+
+
+
+
+
+    // ====================================================
+    // Comment
+    // ====================================================
+
+    // Specify a pattern for comments.
+    'comment-pattern': null,
+
+    // Specify a list of disallowed words within comments.
+    'comment-word-disallowed-list': null,
+
+
+
+
+
+    // ====================================================
+    // General / Sheet
+    // ====================================================
 
     // Limit the depth of nesting.
     'max-nesting-depth': null,
