@@ -1,9 +1,11 @@
 module.exports = {
   rules: {
     // Specify lowercase or uppercase for hex colors (Autofixable).
+    // MAJOR: null
     'color-hex-case': 'upper',
 
     // Specify short or long notation for hex colors (Autofixable).
+    // MAJOR: null
     'color-hex-length': 'long',
 
     // Specify whether or not quotation marks should be used around font family names.
@@ -50,9 +52,6 @@ module.exports = {
 
     // Specify single or double quotes around strings (Autofixable).
     'string-quotes': 'single',
-
-    // Disallow units for zero lengths (Autofixable).
-    'length-zero-no-unit': true,
 
     // Specify lowercase or uppercase for units (Autofixable).
     'unit-case': 'lower',
