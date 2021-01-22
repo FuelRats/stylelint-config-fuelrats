@@ -1,9 +1,9 @@
 module.exports = {
   extends: [
-    './rules/errors',
-    './rules/limitfeatures',
-    './rules/style',
-    './rules/plugin-scss',
-    './rules/plugin-order',
+    './rules/core/errors',
+    './rules/core/limitfeatures',
+    './rules/core/style',
+    './rules/plugin/scss',
+    './rules/plugin/order',
   ],
 }

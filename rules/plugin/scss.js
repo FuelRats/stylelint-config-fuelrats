@@ -1,4 +1,4 @@
-const { kebabCasePattern } = require('../res/patterns')
+const { kebabCasePattern } = require('../../res/patterns')
 
 
 

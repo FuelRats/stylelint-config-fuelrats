@@ -2,7 +2,7 @@ const {
   camelCasePattern,
   kebabCasePattern,
   pascalCasePattern,
-} = require('../res/patterns')
+} = require('../../res/patterns')
 
 
 
