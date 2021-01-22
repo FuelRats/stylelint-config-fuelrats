@@ -1,5 +1,9 @@
 module.exports = {
   rules: {
+    // ====================================================
+    // Color
+    // ====================================================
+
     // Specify lowercase or uppercase for hex colors (Autofixable).
     // MAJOR: null
     'color-hex-case': 'upper',
@@ -8,11 +12,24 @@ module.exports = {
     // MAJOR: null
     'color-hex-length': 'long',
 
+
+
+
+
+    // ====================================================
+    // Font family
+    // ====================================================
+
     // Specify whether or not quotation marks should be used around font family names.
     'font-family-name-quotes': 'always-where-recommended',
 
-    // Require numeric or named (where possible) font-weight values. Also, when named values are expected, require only valid names.
-    'font-weight-notation': 'named-where-possible',
+
+
+
+
+    // ====================================================
+    // Function
+    // ====================================================
 
     // Require a newline or disallow whitespace after the commas of functions (Autofixable).
     'function-comma-newline-after': 'always-multi-line',
@@ -44,20 +61,60 @@ module.exports = {
     // Require or disallow whitespace after functions (Autofixable).
     'function-whitespace-after': 'always',
 
+
+
+
+
+    // ====================================================
+    // Number
+    // ====================================================
+
     // Require or disallow a leading zero for fractional numbers less than 1 (Autofixable).
     'number-leading-zero': 'always',
 
     // Disallow trailing zeros in numbers (Autofixable).
     'number-no-trailing-zeros': true,
 
+
+
+
+
+    // ====================================================
+    // String
+    // ====================================================
+
     // Specify single or double quotes around strings (Autofixable).
     'string-quotes': 'single',
+
+
+
+
+
+    // ====================================================
+    // Unit
+    // ====================================================
 
     // Specify lowercase or uppercase for units (Autofixable).
     'unit-case': 'lower',
 
+
+
+
+
+    // ====================================================
+    // Value
+    // ====================================================
+
     // Specify lowercase or uppercase for keywords values (Autofixable).
     'value-keyword-case': 'lower',
+
+
+
+
+
+    // ====================================================
+    // Value list
+    // ====================================================
 
     // Require a newline or disallow whitespace after the commas of value lists (Autofixable).
     'value-list-comma-newline-after': 'always-multi-line',
@@ -74,11 +131,32 @@ module.exports = {
     // Limit the number of adjacent empty lines within value lists (Autofixable).
     'value-list-max-empty-lines': 0,
 
+
+    // ====================================================
+    // Custom property
+    // ====================================================
+
     // Require or disallow an empty line before custom properties (Autofixable).
     'custom-property-empty-line-before': 'never',
 
+
+
+
+
+    // ====================================================
+    // Property
+    // ====================================================
+
     // Specify lowercase or uppercase for properties (Autofixable).
     'property-case': 'lower',
+
+
+
+
+
+    // ====================================================
+    // Declaration
+    // ====================================================
 
     // Require a single space or disallow whitespace after the bang of declarations (Autofixable).
     'declaration-bang-space-after': 'never',
@@ -98,6 +176,14 @@ module.exports = {
     // Require or disallow an empty line before declarations (Autofixable).
     'declaration-empty-line-before': null,
 
+
+
+
+
+    // ====================================================
+    // Declaration block
+    // ====================================================
+
     // Require a newline or disallow whitespace after the semicolons of declaration blocks (Autofixable).
     'declaration-block-semicolon-newline-after': 'always',
 
@@ -112,6 +198,14 @@ module.exports = {
 
     // Require or disallow a trailing semicolon within declaration blocks (Autofixable).
     'declaration-block-trailing-semicolon': 'always',
+
+
+
+
+
+    // ====================================================
+    // Block
+    // ====================================================
 
     // Require or disallow an empty line before the closing brace of blocks (Autofixable).
     'block-closing-brace-empty-line-before': 'never',
@@ -141,6 +235,13 @@ module.exports = {
 
     // Require a single space or disallow whitespace before the opening brace of blocks (Autofixable).
     'block-opening-brace-space-before': 'always',
+
+
+
+
+    // ====================================================
+    // Selector
+    // ====================================================
 
     // Require a single space or disallow whitespace on the inside of the brackets within attribute selectors (Autofixable).
     'selector-attribute-brackets-space-inside': 'never',
@@ -178,6 +279,14 @@ module.exports = {
     // Specify lowercase or uppercase for type selectors (Autofixable).
     'selector-type-case': 'lower',
 
+
+
+
+
+    // ====================================================
+    // Selector list
+    // ====================================================
+
     // Require a newline or disallow whitespace after the commas of selector lists (Autofixable).
     'selector-list-comma-newline-after': 'always',
 
@@ -190,6 +299,14 @@ module.exports = {
     // Require a single space or disallow whitespace before the commas of selector lists (Autofixable).
     'selector-list-comma-space-before': 'never',
 
+
+
+
+
+    // ====================================================
+    // Rule
+    // ====================================================
+
     // Require or disallow an empty line before rules (Autofixable).
     'rule-empty-line-before': ['always-multi-line', {
       except: [
@@ -197,6 +314,14 @@ module.exports = {
         'first-nested',
       ],
     }],
+
+
+
+
+
+    // ====================================================
+    // Media feature
+    // ====================================================
 
     // Require a single space or disallow whitespace after the colon in media features (Autofixable).
     'media-feature-colon-space-after': 'always',
@@ -216,6 +341,14 @@ module.exports = {
     // Require a single space or disallow whitespace before the range operator in media features (Autofixable).
     'media-feature-range-operator-space-before': 'always',
 
+
+
+
+
+    // ====================================================
+    // Media query list
+    // ====================================================
+
     // Require a newline or disallow whitespace after the commas of media query lists (Autofixable).
     'media-query-list-comma-newline-after': 'always',
 
@@ -227,6 +360,14 @@ module.exports = {
 
     // Require a single space or disallow whitespace before the commas of media query lists (Autofixable).
     'media-query-list-comma-space-before': 'never',
+
+
+
+
+
+    // ====================================================
+    // At-rule
+    // ====================================================
 
     // Require or disallow an empty line before at-rules (Autofixable).
     'at-rule-empty-line-before': ['always', {
@@ -250,6 +391,14 @@ module.exports = {
     // Require a single space or disallow whitespace before the semicolons of at-rules.
     'at-rule-semicolon-space-before': 'never',
 
+
+
+
+
+    // ====================================================
+    // Comment
+    // ====================================================
+
     // Require or disallow an empty line before comments (Autofixable).
     'comment-empty-line-before': ['always', {
       except: ['first-nested'],
@@ -258,6 +407,14 @@ module.exports = {
 
     // Require or disallow whitespace on the inside of comment markers (Autofixable).
     'comment-whitespace-inside': 'always',
+
+
+
+
+
+    // ====================================================
+    // General / Sheet
+    // ====================================================
 
     // Specify indentation (Autofixable).
     indentation: [2, {

@@ -8,7 +8,6 @@ const {
 
 module.exports = {
   rules: {
-
     // ====================================================
     // Alpha-value
     // ====================================================
@@ -56,6 +55,17 @@ module.exports = {
 
     // Disallow units for zero lengths (Autofixable).
     'length-zero-no-unit': true,
+
+
+
+
+
+    // ====================================================
+    // Font weight
+    // ====================================================
+
+    // Require numeric or named (where possible) font-weight values. Also, when named values are expected, require only valid names.
+    'font-weight-notation': 'named-where-possible',
 
 
 
