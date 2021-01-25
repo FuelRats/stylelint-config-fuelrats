@@ -160,7 +160,7 @@ module.exports = {
         unspecified: 'ignore',
 
         // I can't even come up with a single sentance to explain this.
-        // https://github.com/hudochenkov/stylelint-order/tree/master/rules/properties-order#emptylineminimumpropertythreshold-number
+        // https://github.com/hudochenkov/stylelint-order/tree/master/rules/properties-order#emptylineminimumpropertythreshold
         emptyLineMinimumPropertyThreshold: 2,
       },
     ],
