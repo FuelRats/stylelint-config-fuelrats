@@ -69,8 +69,11 @@ module.exports = {
     // ====================================================
 
     // Disallow unknown properties.
+    // MAJOR: (move ignores)
     'property-no-unknown': [true, {
       checkPrefixed: true,
+      ignoreProperties: ['composes', 'compose-with'],
+      ignoreSelectors: [':export', /^:import/u],
     }],
 
 
@@ -93,7 +96,12 @@ module.exports = {
     // ====================================================
 
     // Disallow duplicate properties within declaration blocks.
-    'declaration-block-no-duplicate-properties': true,
+    // MAJOR: (move ignoreProperties)
+    'declaration-block-no-duplicate-properties': [true, {
+      ignoreProperties: [
+        'composes',
+      ],
+    }],
 
     // Disallow shorthand properties that override related longhand properties.
     'declaration-block-no-shorthand-property-overrides': true,
@@ -118,13 +126,25 @@ module.exports = {
     // ====================================================
 
     // Disallow unknown pseudo-class selectors.
-    'selector-pseudo-class-no-unknown': true,
+    // MAJOR: (move ignorePseudoClasses)
+    'selector-pseudo-class-no-unknown': [true, {
+      ignorePseudoClasses: [
+        'export',
+        'import',
+        'global',
+        'local',
+        'external',
+      ],
+    }],
 
     // Disallow unknown pseudo-element selectors.
     'selector-pseudo-element-no-unknown': true,
 
     // Disallow unknown type selectors.
-    'selector-type-no-unknown': true,
+    // MAJOR: (move ignoreTypes)
+    'selector-type-no-unknown': [true, {
+      ignoreTypes: ['from'],
+    }],
 
 
 
@@ -147,6 +167,7 @@ module.exports = {
 
     // Disallow unknown at-rules.
     // Disabled: replaced with `scss/at-rule-no-unknown`
+    // MAJOR: true (disabled by plugin/scss)
     'at-rule-no-unknown': null,
 
 
@@ -184,6 +205,7 @@ module.exports = {
     'no-extra-semicolons': true,
 
     // Disallow double-slash comments (//...) which are not supported by CSS.
+    // MAJOR: (allow for SCSS files)
     'no-invalid-double-slash-comments': true,
   },
 }

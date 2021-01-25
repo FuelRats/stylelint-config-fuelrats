@@ -106,7 +106,12 @@ module.exports = {
     // ====================================================
 
     // Specify lowercase or uppercase for keywords values (Autofixable).
-    'value-keyword-case': 'lower',
+    // MAJOR: (move ignoreProperties)
+    'value-keyword-case': ['lower', {
+      ignoreProperties: [
+        'composes',
+      ],
+    }],
 
 
 

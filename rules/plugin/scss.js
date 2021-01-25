@@ -133,7 +133,9 @@ module.exports = {
     'scss/at-rule-conditional-no-parentheses': true,
 
     // Disallow unknown at-rules. Should be used instead of stylelint's at-rule-no-unknown.
-    'scss/at-rule-no-unknown': true,
+    'scss/at-rule-no-unknown': [true, {
+      ignoreAtRules: ['value'],
+    }],
 
 
 
