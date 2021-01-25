@@ -180,6 +180,9 @@ module.exports = {
         'comments',
         'imports',
       ],
+      except: [
+        'root',
+      ],
     }],
 
     // Disallow Sass variables that are used without interpolation with CSS features that use custom identifiers.
