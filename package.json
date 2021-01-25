@@ -1,6 +1,6 @@
 {
   "name": "@fuelrats/stylelint-config",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Shareable stylelint config for FuelRats SCSS files",
   "main": "index.js",
   "author": {

@@ -14,7 +14,6 @@ module.exports = {
         type: 'at-rule',
         name: 'extend',
       },
-      'dollar-variables',
       'custom-properties',
       'at-variables',
       'declarations',

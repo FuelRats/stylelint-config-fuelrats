@@ -182,6 +182,7 @@ module.exports = {
       ],
       except: [
         'root',
+        'loops',
       ],
     }],
 
