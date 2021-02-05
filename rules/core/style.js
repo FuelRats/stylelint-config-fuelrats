@@ -361,7 +361,7 @@ module.exports = {
     'media-query-list-comma-newline-before': 'never-multi-line',
 
     // Require a single space or disallow whitespace after the commas of media query lists (Autofixable).
-    'media-query-list-comma-space-after': 'never',
+    'media-query-list-comma-space-after': 'always-single-line',
 
     // Require a single space or disallow whitespace before the commas of media query lists (Autofixable).
     'media-query-list-comma-space-before': 'never',
