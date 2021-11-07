@@ -29,9 +29,6 @@ module.exports = {
     // Function
     // ====================================================
 
-    // Disallow an invalid expression within calc functions.
-    'function-calc-no-invalid': true,
-
     // Disallow an unspaced operator within calc functions.
     'function-calc-no-unspaced-operator': true,
 
