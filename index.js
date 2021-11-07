@@ -6,4 +6,5 @@ module.exports = {
     './rules/plugin/scss',
     './rules/plugin/order',
   ],
+  customSyntax: 'postcss-scss',
 }
